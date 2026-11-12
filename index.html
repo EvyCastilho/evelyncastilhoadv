@@ -350,7 +350,7 @@
   footer{border-top:1px solid var(--line); padding:56px 0 40px;}
   .footer-grid{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px;}
   .footer-mark{height:34px; width:auto;}
-  .footer-links{display:flex; gap:26px; font-size:13px; color:var(--muted);}
+  .footer-links{display:flex; flex-wrap:wrap; gap:12px 26px; font-size:13px; color:var(--muted);}
   .footer-links a:hover{color:var(--navy);}
   .disclaimer{
     margin-top:36px; padding-top:26px; border-top:1px solid var(--line);
@@ -523,7 +523,7 @@
         <a href="#atendimento">Atendimento</a>
         <a href="#faq">Dúvidas</a>
       </div>
-      <a class="nav-cta" href="https://wa.me/5512991067573" target="_blank" rel="noopener noreferrer">Falar agora</a>
+      <a class="nav-cta" data-wa="cabecalho" href="https://wa.me/5512991067573" target="_blank" rel="noopener noreferrer">Falar agora</a>
     </div>
   </nav>
 </header>
@@ -534,7 +534,7 @@
     <h1>Defesa técnica na execução penal, <em>a favor de quem espera pela liberdade.</em></h1>
     <p class="lead">Atuação especializada em execução criminal: progressão de regime, livramento condicional, saída temporária e revisão de cálculo de pena — com acompanhamento próximo em cada etapa do processo.</p>
     <div class="hero-ctas">
-      <a class="btn-primary" href="https://wa.me/5512991067573" target="_blank" rel="noopener noreferrer">Falar no WhatsApp →</a>
+      <a class="btn-primary" data-wa="topo" href="https://wa.me/5512991067573" target="_blank" rel="noopener noreferrer">Falar no WhatsApp →</a>
       <a class="btn-ghost" href="#areas">Ver áreas de atuação</a>
     </div>
     <div class="hero-tags">
@@ -694,7 +694,7 @@
       <h2 style="margin-top:18px;">Cada dia conta na execução penal. Fale agora e entenda as possibilidades do seu caso.</h2>
       <p>Atendimento inicial rápido e direto pelo WhatsApp.</p>
       <div class="hero-ctas">
-        <a class="btn-primary" href="https://wa.me/5512991067573" target="_blank" rel="noopener noreferrer">Iniciar conversa no WhatsApp →</a>
+        <a class="btn-primary" data-wa="chamada-final" href="https://wa.me/5512991067573" target="_blank" rel="noopener noreferrer">Iniciar conversa no WhatsApp →</a>
       </div>
     </div>
   </div>
@@ -711,10 +711,12 @@
         </div>
       </div>
       <div class="footer-links">
-        <a href="https://www.instagram.com/adv.ecastilho/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://wa.me/5512991067573" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://www.instagram.com/adv.ecastilho/" data-ig="rodape" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://wa.me/5512991067573" data-wa="rodape" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         <a href="#sobre">Sobre</a>
         <a href="#areas">Áreas de atuação</a>
+        <a href="privacidade.html">Política de Privacidade</a>
+        <a href="#" data-cookie-prefs>Preferências de cookies</a>
       </div>
     </div>
     <div class="disclaimer">
@@ -723,7 +725,7 @@
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/5512991067573" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+<a class="wa-float" data-wa="flutuante" href="https://wa.me/5512991067573" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
   <svg width="26" height="26" viewBox="0 0 24 24" fill="#f6f6f2"><path d="M17.6 6.3A8.86 8.86 0 0 0 12.05 4C7.15 4 3.15 8 3.15 12.9c0 1.55.4 3.05 1.15 4.4L3.05 21l3.85-1.25c1.3.7 2.75 1.1 4.15 1.1 4.9 0 8.9-4 8.9-8.9a8.86 8.86 0 0 0-2.35-5.65zm-5.55 13.7c-1.25 0-2.5-.35-3.55-1l-.25-.15-2.35.75.8-2.3-.15-.3c-.75-1.15-1.15-2.5-1.15-3.9 0-3.9 3.2-7.1 7.15-7.1 1.9 0 3.7.75 5.05 2.1a7.05 7.05 0 0 1 2.1 5.05c0 3.95-3.2 7.15-7.15 7.15h-.5zm3.9-5.35c-.2-.1-1.25-.6-1.45-.7-.2-.1-.35-.1-.5.1-.15.2-.55.7-.7.85-.1.15-.25.15-.45.05-.2-.1-.9-.35-1.7-1.05-.65-.55-1.05-1.25-1.2-1.45-.1-.2 0-.3.1-.4.1-.1.2-.25.3-.4.1-.1.15-.2.2-.35.05-.15 0-.3 0-.4-.05-.1-.5-1.2-.7-1.65-.2-.45-.35-.4-.5-.4h-.4c-.15 0-.4.05-.6.3-.2.2-.8.75-.8 1.85s.8 2.15.9 2.3c.1.15 1.55 2.4 3.8 3.35.5.2.9.35 1.25.45.5.15.95.15 1.3.1.4-.05 1.25-.5 1.4-1 .2-.5.2-.95.15-1-.05-.15-.2-.2-.4-.3z"/></svg>
 </a>
 
@@ -745,5 +747,6 @@
   });
 </script>
 
+<script src="analytics.js" defer></script>
 </body>
 </html>
