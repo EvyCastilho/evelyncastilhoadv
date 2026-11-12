@@ -9,7 +9,7 @@
   'use strict';
 
   // ====== CONFIGURAÇÃO ======
-  var GA_ID = 'G-XXXXXXXXXX';
+  var GA_ID = 'G-TJ4CG9GLRJ';
   // ==========================
 
   var KEY = 'cookie-consent';
